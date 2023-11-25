@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/sigup page </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            background-image: url(/assests/bg.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: max(1200px, 100vw);
+            height: 90vh;
+            position: relative;
+        }
+
+        .main {
+            height: 100vh;
+            opacity: 0.69;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            top: 0;
+        }
+
+        .container {
+            height: 460px;
+            max-width: 450px;
+            margin: 200px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 3px;
+            color: black;
+
+        }
+
+
+        h2 {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+
+        .form-group input {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 18px;
+            outline: none;
+        }
+
+
+
+        .form-group button {
+            background-color: red;
+            font-size: large;
+            color: #ffffff;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 50%;
+
+        }
+
+        .form-group a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #160ff3;
+            padding: 0 0 0 20px;
+
+        }
+
+        img {
+            color: red;
+            width: 200px;
+            position: relative;
+            z-index: 10;
+            display: flex;
+            height: 100px;
+            padding: 16px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <span><img width="105" src="/assests/logo.svg" alt=""></span>
+    <div class="main">
+        <div class="container">
+            <h2>Sign In</h2>
+            <form>
+
+                <div class="form-group">
+                    <!-- <label for="username">Username:</label> -->
+
+                    <input type="text" id="username" name="username" placeholder="Email or username" required>
+
+
+                </div>
+                <div class="form-group">
+                    <!-- <label for="password">Password:</label> -->
+
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+
+                </div>
+                <div class="form-group">
+                    <button type="submit">Sign In</button>
+                    <a href="forget.html">Forget Password?</a>
+
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>
